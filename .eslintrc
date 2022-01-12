@@ -2,7 +2,6 @@
   "settings": {
     "import/resolver": {
       "alias": [
-        ["@cms", "./src/cms"],
         ["@components", "./src/components"],
         ["@templates", "./src/templates"],
         ["@hooks", "./src/hooks"]

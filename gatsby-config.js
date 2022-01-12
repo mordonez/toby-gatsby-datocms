@@ -19,7 +19,6 @@ module.exports = {
       options: {
         alias: {
           "@src": "src",
-          "@cms": "src/cms",
           "@hooks": "src/hooks",
           "@components": "src/components",
           "@pages": "src/pages",
