@@ -32,6 +32,13 @@ module.exports = {
         ],
       }
     },
+    {
+      resolve: "gatsby-source-datocms",
+      options: {
+        apiToken: process.env.DATO_API_TOKEN,
+        environment: process.env.DATO_ENVIRONMENT,
+      },
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
@@ -61,13 +68,6 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         path: `${__dirname}/src/data`,
         name: "data",
       },
@@ -76,30 +76,6 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-relative-images",
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 2048,
-              linkImagesToOriginal: false,
-              showCaptions: ['title'],
-            },
-          },
-          {
-            resolve: "gatsby-remark-copy-linked-files",
-            options: {
-              destinationDir: "static",
-            },
-          },
-        ],
-      },
-    },
     {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {

@@ -2,23 +2,23 @@
   "navigation": [
     {
       "title": "Blog",
-      "url": "/blog/"
+      "url": "/"
     },
     {
       "title": "Sample Page",
-      "url": "/content-page/"
+      "url": "/"
     },
     {
       "title": "Sections Sample",
-      "url": "/sections-sample/"
+      "url": "/"
     },
     {
       "title": "About",
-      "url": "/about/"
+      "url": "/"
     },
     {
       "title": "Contact",
-      "url": "/contact/"
+      "url": "/"
     }
   ]
 }

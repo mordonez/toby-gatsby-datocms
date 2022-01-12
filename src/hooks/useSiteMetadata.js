@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
+{/** TODO: Refactor to DatoCMS */}
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
     graphql`
