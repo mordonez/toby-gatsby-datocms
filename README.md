@@ -12,7 +12,7 @@
 
 ## About
 
-[![Netlify Status]()](https://app.netlify.com/sites/toby-gatsby-forestry/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d4373723-f401-428b-bda5-7d561e092c60/deploy-status)](https://app.netlify.com/sites/toby-gatsby-datocms/deploys)
 
 Toby is a starter to get you going using [Gatsby v4](https://www.gatsbyjs.org/) with [DatoCMS](https://datocms.com/). Check out the demo [here](https://toby-gatsby-datocms.netlify.app/)
 
