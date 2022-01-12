@@ -17,7 +17,7 @@ const PageHeading = ({ data }) => (
 PageHeading.propTypes = {
   data: PropTypes.shape({
     heading: PropTypes.string.isRequired,
-    subheading: PropTypes.string.isRequired,
+    subheading: PropTypes.string,
   })
 };
 

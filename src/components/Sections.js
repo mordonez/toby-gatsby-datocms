@@ -1,17 +1,25 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import PageHeading from "@components/Sections/PageHeading"
-import ImageAndText from "@components/Sections/ImageAndText";
+import Hero from "@components/Sections/Hero";
 import FullImage from "@components/Sections/FullImage";
 import FeaturedPost from "@components/Sections/FeaturedPost";
 import Columns from "@components/Sections/Columns";
 import ContactForm from "./Sections/ContactForm";
 
+/** 
+  
+  TODO: 
+
+  Actions buttons 
+
+*/
+
 const Sections = ({ sections }) => {
 
   const sectionsComponents = {
-    'section-page-heading': PageHeading,
-    'section-image-and-text': ImageAndText,
+    'page_heading': PageHeading,
+    'hero': Hero,
     'section-full-image': FullImage,
     featuredpost: FeaturedPost,
     'section-columns': Columns,
@@ -19,18 +27,18 @@ const Sections = ({ sections }) => {
   }
   if (sections) {
     const sectionsContent = sections.map((section, key) => {
-      const Section = sectionsComponents[section.template]
+      const Section = sectionsComponents[section.model.apiKey]
     if (Section) {
-      return <Section key={`${section.template}-${key}`} data={section} />
+      return <Section key={`${section.model.apiKey}-${key}`} data={section} />
     }
-    return <div key={`${section}-${key}`}>{section.template}</div>
+      return <div key={`${section}-${key}`}>{section.model.apiKey}</div>
   })
   return (
     <>{sectionsContent}</>
   )}
   else { return <></>}
 };
-
+/*
 Sections.propTypes = {
   sections: PropTypes.arrayOf(
     PropTypes.shape({
@@ -43,5 +51,5 @@ Sections.propTypes = {
     })
   ),
 };
-
+*/
 export default Sections;
