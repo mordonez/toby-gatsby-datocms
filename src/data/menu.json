@@ -1,0 +1,24 @@
+{
+  "navigation": [
+    {
+      "title": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "title": "Sample Page",
+      "url": "/content-page/"
+    },
+    {
+      "title": "Sections Sample",
+      "url": "/sections-sample/"
+    },
+    {
+      "title": "About",
+      "url": "/about/"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact/"
+    }
+  ]
+}
