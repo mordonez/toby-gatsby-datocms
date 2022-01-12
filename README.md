@@ -50,13 +50,6 @@ yarn develop
 npm install
 npm run develop
 ```
-# Blocks (Sections)
-
-- Page heading `src/components/sections/PageHeading`,
-- Image and text' `src/components/sections/ImageAndText`,
-- Full Image': `src/components/sections/FullImage`,
-- Columns': `src/components/sections/Columns`,
-- Contact form': `src/components/sections/ContactForm`
 ## Prerequisites
 
 - Minimal Node.js version 14.15.0
