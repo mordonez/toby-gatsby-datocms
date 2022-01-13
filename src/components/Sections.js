@@ -5,13 +5,12 @@ import Hero from "@components/Sections/Hero";
 import FullImage from "@components/Sections/FullImage";
 import FeaturedPost from "@components/Sections/FeaturedPost";
 import Columns from "@components/Sections/Columns";
-import ContactForm from "./Sections/ContactForm";
 
-/** 
-  
-  TODO: 
+/**
 
-  Actions buttons 
+  TODO:
+
+  Actions buttons
 
 */
 
@@ -21,9 +20,7 @@ const Sections = ({ sections }) => {
     'page_heading': PageHeading,
     'hero': Hero,
     'section-full-image': FullImage,
-    featuredpost: FeaturedPost,
-    'section-columns': Columns,
-    'section-contact-form': ContactForm
+    'section-columns': Columns
   }
   if (sections) {
     const sectionsContent = sections.map((section, key) => {
