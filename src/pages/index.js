@@ -2,14 +2,21 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "@components/Layout";
 import { HelmetDatoCms } from "gatsby-source-datocms";
-import Sections from "@components/Sections";
+import Hero from "@components/Sections/Hero";
 
-const HomePage = ({data: {site, home}}) => {
+const HomePage = ({ data: { site, home } }) => {
+  const hero = {
+    image: home.heroImage,
+    heading: home.heroHeading,
+    subheading: home.heroSubheading,
+    imagePosition: 'right',
+    style: 'light'
+  }
   return (
     <Layout>
       <HelmetDatoCms seo={home.seo} favicon={site.favicon} />
-      <Sections sections={home.sections} />
-      </Layout>
+      <Hero data={hero} />
+    </Layout>
   );
 }
 
@@ -26,44 +33,10 @@ export const HomePageQuery = graphql`
         seo: seoMetaTags {
           ...GatsbyDatoCmsSeoMetaTags
         }
-        sections {
-          ... on DatoCmsHero {
-            model {
-              apiKey
-            }
-            heading
-            subheading
-            imagePosition
-            style
-            actions{
-              label
-              link {
-                __typename
-                
-              }
-              actionType
-              link {
-                ... on DatoCmsHome {
-                  id
-                }
-                ... on DatoCmsBlockpage {
-                  id
-                  slug
-                }
-              }
-              icon
-            }
-            image {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
-          ... on DatoCmsPageHeading {
-            model {
-              apiKey
-            }
-            heading
-            subheading
-          }
+        heroHeading
+        heroSubheading
+        heroImage {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
   }
