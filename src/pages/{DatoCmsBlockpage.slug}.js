@@ -4,12 +4,12 @@ import Layout from "@components/Layout";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import Sections from "@components/Sections";
 
-const Blockpage = ({ data: { site, blockpage}}) => {
+const Blockpage = ({ data: { site, blockpage } }) => {
   return (
     <Layout>
       <HelmetDatoCms seo={blockpage.seo} favicon={site.favicon} />
       <Sections sections={blockpage.sections} />
-      </Layout>
+    </Layout>
   );
 }
 
@@ -33,7 +33,11 @@ export const BlockpageQuery = graphql`
               apiKey
             }
             heading
-            subheading
+            subheadingNode {
+              childMarkdownRemark {
+                html
+              }
+            }
             imagePosition
             style
             actions{
