@@ -21,13 +21,13 @@ const StyleColors = {
   },
 }
 
-const Hero = ({ data: { image, heading, subheadingNode, imagePosition, style } }) => {
+const Hero = ({ data: { image, heading, subheading, subheadingNode, imagePosition, style } }) => {
   const StyleComponents = {
     left: ImageLeft,
     right: ImageRight
   }
   const Component = StyleComponents[imagePosition]
-  const subheadingHtml = subheadingNode.childMarkdownRemark?.html
+  const subheadingHtml = subheadingNode?.childMarkdownRemark?.html ? subheadingNode.childMarkdownRemark?.html : subheading
   if (Component) {
     return <section className={`section ${StyleColors[style].background}`}>
       <div className="container">
