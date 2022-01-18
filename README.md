@@ -31,7 +31,6 @@ Toby is a starter to get you going using [Gatsby v4](https://www.gatsbyjs.org/) 
 
 ##  Quick Setup
 
-
 #### *Using the Gatsby CLI*
 In your terminal, navigate to where you would like this blog to live, then run
 ```bash
