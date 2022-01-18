@@ -2,10 +2,9 @@
   "name": "Toby",
   "description": "Toby is a starter to get you going using Gatsby v4 with DataoCMS",
   "previewImage": "https://raw.githubusercontent.com/mordonez/toby-gatsby-datocms/main/screenshot.jpeg",
+  "repo": "mordonez/toby-gatsby-datocms:main",
   "datocmsProjectId": "61190",
-  "deploymentType": "copyRepo",
-  "repo": "https://github.com/mordonez/toby-gatsby-datocms",
+  "deploymentType": "static",
   "buildCommand": "npm run build",
-  "buildDirectory": "public",
   "livePreviewUrl": "https://toby-gatsby-datocms.netlify.app"
 }
