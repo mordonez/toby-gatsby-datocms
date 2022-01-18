@@ -16,7 +16,9 @@
 
 Toby is a starter to get you going using [Gatsby v4](https://www.gatsbyjs.org/) with [DatoCMS](https://datocms.com/). Check out the demo [here](https://toby-gatsby-datocms.netlify.app/)
 
-## TODO
+[![Clone DatoCMS project](https://dashboard.datocms.com/clone/button.svg)](https://dashboard.datocms.com/clone?projectId=61190&name=toby-gatsby-starter)
+
+## Features
 
 - Create dynamic pages from DatoCMS using a [block system]
 - Create Blog posts from DatoCMS directly
