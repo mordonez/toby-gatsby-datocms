@@ -36,7 +36,7 @@ module.exports = {
       resolve: "gatsby-source-datocms",
       options: {
         apiToken: process.env.DATO_API_TOKEN,
-        previewMode: process.env.NODE_ENV !== 'production' || false 
+        previewMode: process.env.NODE_ENV === 'production' ? false : true 
       },
     },
     "gatsby-plugin-react-helmet",
